@@ -2,7 +2,7 @@
 
 ## 1. Project Setup (Vite)
 
--   [Node js download and installatoin](/nodeJsInstallation.md)
+-   [Node js download and installatoin](nodeJsInstallation.md)
 
 -   **Command:** npm create vite@latest
     
