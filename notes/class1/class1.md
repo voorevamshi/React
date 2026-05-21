@@ -61,7 +61,7 @@
 
 ----------
 
-## 3. Vanilla JS vs. Core React Core Concepts
+## 3.[Vanilla JS vs. Core React Core Concepts](BrowsersReadReactAndTheRoleofBabel.md)
 
 ### Under the Hood: React Elements
 
