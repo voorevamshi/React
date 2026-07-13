@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Object1() {
+function Object() {
 
     const employee = { id:1,name:"Ajay",age:32,salary:3400000.0}
   return (
@@ -18,4 +18,4 @@ function Object1() {
 }
 
 
-export default Object1
+export default Object

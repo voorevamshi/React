@@ -1,6 +1,6 @@
 import ListOfObjects from "./ListOfObjects"
 import ListOfStrings from "./ListOfStrings"
-import Object1 from "./Object1"
+import Object from "./Object"
 
 
 
@@ -11,7 +11,7 @@ function App() {
     <>    
 
     <ListOfStrings/>
-    <Object1/>    
+    <Object/>    
     <ListOfObjects/>
     </>
   )
