@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from "react";
 
-function CricketScoer() {
+function CricketScore() {
 
     const [score,setScore]=useState(0);
     
@@ -18,4 +18,4 @@ function CricketScoer() {
   )
 }
 
-export default CricketScoer
+export default CricketScore

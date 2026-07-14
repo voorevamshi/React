@@ -1,45 +1,14 @@
 import React from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import { addToCart } from './store';
 
 function Veg() {
-
-    const vegetables = [
-  {
-    id: 1,
-    name: "Tomato",
-    price: 30,
-    quantity: 50,
-    unit: "kg",
-    category: "Vegetable"
-  },
-  {
-    id: 2,
-    name: "Potato",
-    price: 25,
-    quantity: 100,
-    unit: "kg",
-    category: "Vegetable"
-  },
-  {
-    id: 3,
-    name: "Onion",
-    price: 40,
-    quantity: 80,
-    unit: "kg",
-    category: "Vegetable"
-  },
-  {
-    id: 4,
-    name: "Carrot",
-    price: 60,
-    quantity: 30,
-    unit: "kg",
-    category: "Vegetable"
-  }
-];
+    let dispatct= useDispatch();
+    const vegetables = useSelector((globalState)=>globalState.products.vegetables);
 console.log(vegetables);
  
 const vegListObject =vegetables.map((veg)=>
-    <li key={veg.id} > {veg.name} -  {veg.price} <button>AddToCart</button></li>
+    <li key={veg.id} > {veg.name} -  {veg.price} <button onClick={()=>dispatct(addToCart(veg))}>AddToCart</button></li>
 )
   return (
     <>
