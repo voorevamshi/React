@@ -1,3 +1,5 @@
+[<~ Back to Class 2](class2.md)
+
 Here is the master list of all dependencies, routing mechanisms, and state hooks utilized throughout Chapter 2:
 
 

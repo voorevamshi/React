@@ -1,4 +1,4 @@
-
+[<~ Back to Project Architecture & Core React Elements](projectArch&CoreReactElements.md)
 # How Browsers Read React & The Role of Babel
 
 ## 1. Why Vanilla JS Elements Fail in React's render()

@@ -1,4 +1,6 @@
-## Chapter 2: Conditional Rendering, Global State Architecture, & Form Management
+[<~ Back to README](../../README.md)
+
+### Chapter 2: Conditional Rendering, Global State Architecture, & Form Management
 
 ### [1. Q & A in Chapter 2](QandA.md)
 

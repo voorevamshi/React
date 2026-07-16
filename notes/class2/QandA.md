@@ -1,4 +1,4 @@
-
+[<~ Back to Class 2](class2.md)
 ### Q1: Why can't a standard JavaScript `if` statement be written directly inside a JSX `return` block?
 
 -   **Answer:** JSX is a syntactic extension that compiles down to nested JavaScript function calls (`React.createElement`). Because a standard `if` statement is a statement and does not evaluate directly to a value, it is structurally illegal inside function arguments. To handle logic within JSX, you must open an expression window using curly braces `{}` and use expressions like the **Ternary Operator (`? :`)** or the **Logical AND operator (`&&`)**.

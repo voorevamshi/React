@@ -1,4 +1,4 @@
-
+[<~ Back to Class 2](class2.md)
 ```
 my-react-app/
 │

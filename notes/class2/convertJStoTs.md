@@ -1,3 +1,4 @@
+[<~ Back to Class 2](class2.md)
 ## 🛠️ Step 0: The Configuration & Environment Setup
 
 Before touching your components, you need to change your configuration files so the project knows how to compile TypeScript.
