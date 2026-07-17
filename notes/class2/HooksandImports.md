@@ -2,6 +2,11 @@
 
 Here is the master list of all dependencies, routing mechanisms, and state hooks utilized throughout Chapter 2:
 
+### App creaton and starting
+
+- npm install vite@latest
+- npm run dev -- --force
+- Run your development command with the --force flag. This forces Vite to completely delete its cache directory (node_modules/.vite) and rebuild your module tree from scratch:
 
 ### State and Global Architecture
 
@@ -10,15 +15,18 @@ Here is the master list of all dependencies, routing mechanisms, and state hooks
     -   `useState`: Core React hook used to manage reactive text/variables (like tracking the typed `couponCode` string) within an isolated component.
         
 -   **`import { useSelector, useDispatch } from 'react-redux'`**
+-   npm install react-redux
     
     -   `useSelector`: A Redux hook that extracts specific slices of data from the centralized global store (e.g., subscribing to `state.cart` or `state.products.vegetables`).
         
     -   `useDispatch`: A Redux hook that returns a reference to the dispatch function, allowing you to send action payloads (like `addToCart(item)`) up to the Redux reducers.
+    -   Provider tage
         
 
 ### Action Creators and Configuration
 
 -   **`import { configureStore, createSlice } from "@reduxjs/toolkit"`**
+-   npm install @reduxjs/toolkit
     
     -   `createSlice`: A Redux Toolkit utility that accepts an initial state and an object of reducer functions to automatically generate action creators and action types.
         
@@ -32,6 +40,7 @@ Here is the master list of all dependencies, routing mechanisms, and state hooks
 ### Multi-Page Navigation Layouts
 
 -   **`import { BrowserRouter, Link, Route, Routes } from "react-router-dom"`**
+-   npm install react-router-dom
     
     -   `BrowserRouter`: The base wrapper context component that enables dynamic client-side URL routing.
         
