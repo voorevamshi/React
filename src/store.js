@@ -83,6 +83,134 @@ const productSlice = createSlice({
     quantity: 15,
     unit: "kg",
     category: "Vegetable"
+  },
+  {
+    id: 11,
+    name: "Beetroot",
+    price: 45,
+    quantity: 30,
+    unit: "kg",
+    category: "Root Vegetable"
+  },
+  {
+    id: 12,
+    name: "Radish",
+    price: 25,
+    quantity: 40,
+    unit: "kg",
+    category: "Root Vegetable"
+  },
+  {
+    id: 13,
+    name: "Bottle Gourd",
+    price: 35,
+    quantity: 25,
+    unit: "kg",
+    category: "Vegetable"
+  },
+  {
+    id: 14,
+    name: "Bitter Gourd",
+    price: 70,
+    quantity: 20,
+    unit: "kg",
+    category: "Vegetable"
+  },
+  {
+    id: 15,
+    name: "Ridge Gourd",
+    price: 50,
+    quantity: 18,
+    unit: "kg",
+    category: "Vegetable"
+  },
+  {
+    id: 16,
+    name: "Snake Gourd",
+    price: 60,
+    quantity: 15,
+    unit: "kg",
+    category: "Vegetable"
+  },
+  {
+    id: 17,
+    name: "Drumstick",
+    price: 90,
+    quantity: 12,
+    unit: "kg",
+    category: "Vegetable"
+  },
+  {
+    id: 18,
+    name: "Green Peas",
+    price: 120,
+    quantity: 20,
+    unit: "kg",
+    category: "Legume"
+  },
+  {
+    id: 19,
+    name: "Sweet Corn",
+    price: 80,
+    quantity: 35,
+    unit: "kg",
+    category: "Vegetable"
+  },
+  {
+    id: 20,
+    name: "Pumpkin",
+    price: 30,
+    quantity: 50,
+    unit: "kg",
+    category: "Vegetable"
+  },
+  {
+    id: 21,
+    name: "Cucumber",
+    price: 40,
+    quantity: 45,
+    unit: "kg",
+    category: "Vegetable"
+  },
+  {
+    id: 22,
+    name: "Green Chilli",
+    price: 100,
+    quantity: 10,
+    unit: "kg",
+    category: "Vegetable"
+  },
+  {
+    id: 23,
+    name: "Garlic",
+    price: 180,
+    quantity: 15,
+    unit: "kg",
+    category: "Spice Vegetable"
+  },
+  {
+    id: 24,
+    name: "Ginger",
+    price: 160,
+    quantity: 20,
+    unit: "kg",
+    category: "Spice Vegetable"
+  },
+  {
+    id: 25,
+    name: "Mint",
+    price: 15,
+    quantity: 100,
+    unit: "bunch",
+    category: "Leafy Vegetable"
+  },
+  {
+    id: 26,
+    name: "Coriander",
+    price: 20,
+    quantity: 90,
+    unit: "bunch",
+    category: "Leafy Vegetable"
   }
 ],
  nonVegProducts : [

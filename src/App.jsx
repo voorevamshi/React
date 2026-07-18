@@ -8,6 +8,7 @@ import Veg from "./Veg";
 import NonVeg from "./NonVeg";
 import Cart from "./Cart";
 import { useSelector } from "react-redux";
+import Pagenation from "./Pagenation";
 
 
 
@@ -30,6 +31,7 @@ function App() {
 <span style={{padding:"50px"}}>
 <Link to="/vegtables" ><span style={{padding:"5px"}}>Veg</span></Link>
 <Link to="/nonVegtables"><span style={{padding:"5px"}}>Non Veg</span></Link>
+<Link to="/vegPageNation"><span style={{padding:"5px"}}>Veg Pagenation</span></Link>
 <Link to="/cart"><span style={{padding:"5px"}}>Cart {totalCartCount}</span></Link>
 </span>
 {<br></br>}
@@ -43,6 +45,7 @@ function App() {
 
 <Route path="/vegtables" element={<Veg/> }></Route>|
 <Route path="/nonVegtables" element={<NonVeg/> }></Route>
+<Route path="/vegPageNation" element={<Pagenation/> }></Route>
 <Route path="/cart" element={<Cart/> }></Route>
 </Routes>
 </BrowserRouter>

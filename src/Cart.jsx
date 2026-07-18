@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
-
+import emailjs from '@emailjs/browser';
 function Cart() {
 
 let cartItems = useSelector(globalState=>globalState.cart);
@@ -49,7 +49,42 @@ console.log(discountAmount)
  return couponResult;
   }
 
+  const[customerEmail,setCustomerEmail]=useState("");
   const netAmount =totalCartAmount-couponResult.discountAmount;
+  let taxAmount = totalCartAmount *0.18;
+  const templateParams ={
+    orders:cartItems.map(item =>({
+      name:item.name,
+      price:(item.price * item.quantity).toFixed(2),
+      units:item.quantity  
+    })),
+    cost:{
+      shipping:50,
+      tax:taxAmount.toFixed(2),
+      total:netAmount.toFixed(2),
+      couponDiscount:couponResult.discountAmount,
+      totalAmount:totalCartAmount
+    },
+    email:customerEmail,
+    order_id:2222
+  }
+
+  
+
+  let handleCheckout =()=>{
+    if(!customerEmail){
+      alert("Email required");
+    }
+    else{
+      emailjs.send('service_7hizva1','template_bwq5yzh',templateParams,'LEcm8hQU0qge4ZZIV').
+      then(()=>{
+        alert('Email Sent succesfully');
+      }).catch((error)=>{
+        alert('Email sending failed',error);
+      });
+
+    }
+  }
 
   return (
     <>
@@ -67,6 +102,19 @@ console.log(discountAmount)
      <button >30% discount</button>
     <h3>Total Amount: {totalCartAmount}</h3>
     <h3>Final Amount: {netAmount}</h3>
+    <div className='mb-3'>
+      <label>Enter your gmail to receive order confirmation</label>
+      <input
+      type='email'
+      value={customerEmail}
+      onChange={(e)=>setCustomerEmail(e.target.value)}
+      className='form-control'
+      placeholder='you@gmail.com'
+      />
+
+    </div>
+
+    <button onClick={handleCheckout}>Checkout & Send Email</button>
     </>
   )
 }

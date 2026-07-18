@@ -1,6 +1,6 @@
 [<~ Back to README](../../README.md)
 
-### Chapter 2: Conditional Rendering, Global State Architecture, & Form Management
+### Chapter 2: Conditional Rendering, State Derivation, Redux Toolkit Integration, TypeScript Migrations, and TypeScript Class/Interface mechanics
 
 ### [1. Q & A in Chapter 2](QandA.md)
 
