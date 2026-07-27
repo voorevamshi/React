@@ -2,6 +2,8 @@
 
 ### Chapter 2: Conditional Rendering, State Derivation, Redux Toolkit Integration, TypeScript Migrations, and TypeScript Class/Interface mechanics
 
+### [Notes](notes.md)
+
 ### [1. Q & A in Chapter 2](QandA.md)
 
 ### [2. Hooks and Imports Introduced in Chapter 2](HooksandImports.md)
